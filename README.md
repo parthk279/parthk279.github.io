@@ -1,5 +1,5 @@
 # Portfolio-Website
-# <a href="https://suryasashankgundepudi.github.io" target="_blank">My Portfolio Website</a>
+# <a href="https://parthk279.github.io" target="_blank">My Portfolio Website</a>
 
 /*[![Repository Status](https://img.shields.io/badge/Repository%20Status-Maintained-dark%20green.svg)](https://github.com/suryasashankgundepudi/suryasashankgundepudi.github.io)*/
 [![Website Status](https://img.shields.io/badge/Website%20Status-Online-green)](https://suryasashankgundepudi.github.io)
@@ -10,4 +10,4 @@
 
 ![My Alternate Portfolio Website](https://raw.githubusercontent.com/suryasashankgundepudi/suryasashankgundepudi.github.io/main/Professional%20Website.JPG)
 
-Please hit me up at sashanksurya9wj@gmail.com for feedback
+Please hit me up at parthkatlana@gmail.com for feedback
