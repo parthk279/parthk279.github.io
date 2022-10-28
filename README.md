@@ -8,6 +8,6 @@
 
  <p align="justify">Hey  everyone, I made this website to try and play around in HTML and CSS and js. I use this website to update my resume and also my current projects. You can also find a list of my certifications here </p>
 
-![My Alternate Portfolio Website](https://raw.githubusercontent.com/suryasashankgundepudi/suryasashankgundepudi.github.io/main/Website%20SS.jpg)
+![My Alternate Portfolio Website](https://github.com/parthk279/parthk279.github.io/blob/main/Website%20SS.jpg)
 
 Please hit me up at parthkatlana@gmail.com for feedback
