@@ -1,4 +1,5 @@
 import Nav from "@/components/Nav";
+import Ambient from "@/components/Ambient";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
@@ -8,10 +9,12 @@ import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
 import SideQuests from "@/components/SideQuests";
 import Footer from "@/components/Footer";
+import Chatbot from "@/components/Chatbot";
 
 export default function Home() {
   return (
     <>
+      <Ambient />
       <Nav />
       <main>
         <Hero />
@@ -24,6 +27,7 @@ export default function Home() {
         <SideQuests />
         <Footer />
       </main>
+      <Chatbot />
     </>
   );
 }

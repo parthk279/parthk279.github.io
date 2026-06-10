@@ -3,10 +3,10 @@ import { achievements } from "@/data/portfolio";
 export default function Achievements() {
   return (
     <section id="achievements" className="py-24 px-6 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-2">
+      <h2 className="font-display text-4xl font-bold text-center text-parchment">
         Achievements Unlocked
       </h2>
-      <p className="text-muted text-center text-sm font-mono mb-12">
+      <p className="text-gold/70 text-center text-sm font-display tracking-widest mb-12 mt-2">
         ~ trophies earned on this journey ~
       </p>
 
@@ -14,16 +14,14 @@ export default function Achievements() {
         {achievements.map((achievement, i) => (
           <div
             key={i}
-            className="border border-card-border rounded-lg bg-card p-5 card-hover"
+            className="wood-card rounded-xl p-5 card-hover flex items-start gap-3"
           >
-            <div className="flex items-start gap-3">
-              <span className="flex-shrink-0 w-10 h-10 flex items-center justify-center rounded-lg bg-accent/10 text-accent font-bold text-xs font-mono border border-accent/30">
-                {achievement.rank}
-              </span>
-              <p className="text-sm text-foreground/90 leading-snug">
-                {achievement.title}
-              </p>
-            </div>
+            <span className="flex-shrink-0 w-11 h-11 flex items-center justify-center rounded-lg bg-gold/15 text-gold font-display font-bold text-xs border border-gold/40 shadow-[0_0_12px_rgba(255,184,0,0.2)]">
+              {achievement.rank}
+            </span>
+            <p className="text-sm text-muted leading-snug pt-0.5">
+              {achievement.title}
+            </p>
           </div>
         ))}
       </div>

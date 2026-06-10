@@ -3,26 +3,28 @@ import { projects } from "@/data/portfolio";
 export default function Projects() {
   return (
     <section id="projects" className="py-24 px-6 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-2">Quest Log</h2>
-      <p className="text-muted text-center text-sm font-mono mb-12">
-        ~ legendary encounters along the way ~
+      <h2 className="font-display text-4xl font-bold text-center text-parchment">
+        Quest Log
+      </h2>
+      <p className="text-gold/70 text-center text-sm font-display tracking-widest mb-12 mt-2">
+        ~ legendary encounters, each worth remembering ~
       </p>
 
-      <div className="space-y-8">
+      <div className="space-y-6">
         {projects.map((project) => (
           <div
             key={project.number}
-            className="border border-card-border rounded-xl bg-card p-8 card-hover"
+            className="parchment-card rounded-2xl p-8 card-hover"
           >
             <div className="flex items-start gap-6">
-              <span className="hidden md:flex flex-shrink-0 w-14 h-14 items-center justify-center rounded-xl bg-primary/10 text-primary font-bold text-xl font-mono border border-primary/30">
+              <span className="hidden md:flex flex-shrink-0 w-14 h-14 items-center justify-center rounded-xl bg-primary/10 text-primary-dark font-display font-bold text-2xl border border-primary/40">
                 {project.number}
               </span>
 
               <div className="flex-1">
                 <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-lg font-bold text-foreground">
-                    <span className="md:hidden text-primary font-mono mr-2">
+                  <h3 className="font-display text-xl font-bold text-parchment-ink">
+                    <span className="md:hidden text-primary-dark mr-2">
                       {project.number}.
                     </span>
                     {project.title}
@@ -32,7 +34,8 @@ export default function Projects() {
                       href={project.link}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="flex-shrink-0 text-muted hover:text-primary transition-colors"
+                      className="flex-shrink-0 text-bark-light hover:text-primary-dark transition-colors"
+                      aria-label={`Open ${project.title}`}
                     >
                       <svg
                         className="w-5 h-5"
@@ -51,7 +54,7 @@ export default function Projects() {
                   )}
                 </div>
 
-                <p className="text-sm text-foreground/70 leading-relaxed mb-4">
+                <p className="text-sm text-bark leading-relaxed mb-4">
                   {project.description}
                 </p>
 
@@ -59,7 +62,7 @@ export default function Projects() {
                   {project.tech.map((t) => (
                     <span
                       key={t}
-                      className="px-2 py-1 text-xs bg-tag-bg text-tag-text rounded border border-primary/20 font-mono"
+                      className="px-2.5 py-1 text-xs font-display font-semibold bg-primary/10 text-primary-dark rounded-md border border-primary/30"
                     >
                       {t}
                     </span>

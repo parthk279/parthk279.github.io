@@ -15,14 +15,14 @@ export default function Nav() {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
         scrolled
-          ? "bg-background/80 backdrop-blur-md border-b border-card-border"
+          ? "bg-[#080e1c]/85 backdrop-blur-md border-b border-primary/20"
           : "bg-transparent"
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
         <a
           href="#"
-          className="text-sm font-mono text-primary hover:text-primary/80 transition-colors"
+          className="font-display font-bold text-lg text-primary hover:text-gold transition-colors"
         >
           PK
         </a>
@@ -30,25 +30,25 @@ export default function Nav() {
         <div className="flex items-center gap-6">
           <a
             href="#about"
-            className="text-sm text-muted hover:text-foreground transition-colors hidden sm:block"
+            className="text-sm font-display text-muted hover:text-parchment transition-colors hidden sm:block"
           >
             About
           </a>
           <a
             href="#experience"
-            className="text-sm text-muted hover:text-foreground transition-colors hidden sm:block"
+            className="text-sm font-display text-muted hover:text-parchment transition-colors hidden sm:block"
           >
             Journey
           </a>
           <a
             href="#projects"
-            className="text-sm text-muted hover:text-foreground transition-colors hidden sm:block"
+            className="text-sm font-display text-muted hover:text-parchment transition-colors hidden sm:block"
           >
             Quests
           </a>
           <a
             href="#contact"
-            className="px-4 py-1.5 border border-primary text-primary text-sm font-mono rounded hover:bg-primary/10 transition-all"
+            className="px-4 py-1.5 border border-primary text-primary text-sm font-display font-semibold rounded-lg hover:bg-primary/10 transition-all"
           >
             Talk to me
           </a>

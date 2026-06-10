@@ -49,10 +49,10 @@ export default function Connect() {
             href={link.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="flex items-center gap-2 px-4 py-2 border border-card-border rounded-lg text-muted hover:text-primary hover:border-primary/50 transition-all duration-300"
+            className="flex items-center gap-2 px-5 py-2.5 wood-card rounded-lg text-muted hover:text-gold card-hover"
           >
             {link.icon}
-            <span className="text-sm font-mono">{link.label}</span>
+            <span className="text-sm font-display font-semibold">{link.label}</span>
           </a>
         ))}
       </div>

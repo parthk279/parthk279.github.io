@@ -3,7 +3,7 @@ import { profile } from "@/data/portfolio";
 const treasures = [
   {
     label: "Resume",
-    subtitle: "The adventurer's scroll.",
+    subtitle: "Full adventure log.",
     href: profile.resumeUrl,
     action: "Loot",
   },
@@ -17,7 +17,7 @@ const treasures = [
     label: "Email",
     subtitle: "Send a raven.",
     href: `mailto:${profile.email}`,
-    action: "Write",
+    action: "Message",
   },
   {
     label: "GitHub",
@@ -30,8 +30,10 @@ const treasures = [
 export default function Footer() {
   return (
     <footer id="contact" className="py-24 px-6 max-w-5xl mx-auto">
-      <h2 className="text-3xl font-bold text-center mb-2">Treasure Found</h2>
-      <p className="text-muted text-center text-sm font-mono mb-12">
+      <h2 className="font-display text-4xl font-bold text-center text-parchment">
+        Treasure Found
+      </h2>
+      <p className="text-gold/70 text-center text-sm font-display tracking-widest mb-12 mt-2">
         ~ take what you need, adventurer ~
       </p>
 
@@ -42,24 +44,31 @@ export default function Footer() {
             href={item.href}
             target="_blank"
             rel="noopener noreferrer"
-            className="border border-card-border rounded-xl bg-card p-5 card-hover group block"
+            className="wood-card rounded-xl p-5 card-hover group block relative overflow-hidden"
           >
-            <p className="text-sm font-bold text-foreground group-hover:text-primary transition-colors">
+            <div
+              className="absolute -right-4 -top-4 w-16 h-16 rounded-full animate-treasure-pulse"
+              style={{
+                background:
+                  "radial-gradient(circle, rgba(255,184,0,0.3) 0%, transparent 70%)",
+              }}
+            />
+            <p className="font-display font-bold text-parchment group-hover:text-gold transition-colors">
               {item.label}
             </p>
-            <p className="text-xs text-muted mt-1">{item.subtitle}</p>
-            <p className="text-xs font-mono text-primary mt-3">
+            <p className="text-xs text-muted/80 mt-1">{item.subtitle}</p>
+            <p className="text-xs font-display font-semibold text-primary mt-3">
               {item.action} &rarr;
             </p>
           </a>
         ))}
       </div>
 
-      <div className="text-center border-t border-card-border pt-8">
-        <p className="text-muted text-sm font-mono italic mb-4">
+      <div className="text-center border-t border-primary/15 pt-8">
+        <p className="text-gold/70 text-sm font-display italic mb-4">
           &ldquo;the adventure never ends.&rdquo;
         </p>
-        <p className="text-muted/60 text-xs">
+        <p className="text-muted/50 text-xs">
           &copy; {new Date().getFullYear()} {profile.name.first}{" "}
           {profile.name.last}. All rights reserved.
         </p>
