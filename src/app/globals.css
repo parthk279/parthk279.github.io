@@ -45,6 +45,18 @@
   --tag-text: #ff8236;
 }
 
+html {
+  scroll-behavior: smooth;
+  /* Keep anchored sections clear of the fixed nav bar */
+  scroll-padding-top: 4rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 body {
   background:
     radial-gradient(ellipse 80% 50% at 50% 100%, rgba(255, 130, 54, 0.08), transparent 70%),

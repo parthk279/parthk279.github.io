@@ -19,28 +19,17 @@ export default function Hero() {
         <p className="text-muted text-lg md:text-xl mt-8 max-w-2xl mx-auto leading-relaxed">
           {profile.tagline}
         </p>
-
-        <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a
-            href="#about"
-            className="px-8 py-3 bg-primary text-night font-display font-semibold text-sm rounded-lg hover:bg-gold transition-all duration-300 shadow-[0_4px_20px_rgba(255,130,54,0.4)]"
-          >
-            Venture Forth
-          </a>
-          <a
-            href="#contact"
-            className="px-8 py-3 border border-primary/50 text-primary font-display font-semibold text-sm rounded-lg hover:bg-primary/10 transition-all duration-300"
-          >
-            Talk to me
-          </a>
-        </div>
       </div>
 
+      {/* Venture Forth, sitting just above the campfire with the guiding arrow */}
       <a
         href="#about"
-        className="absolute bottom-10 z-10 text-gold/60 hover:text-gold transition-colors"
-        aria-label="Scroll to about"
+        className="group absolute bottom-28 md:bottom-32 z-10 flex flex-col items-center gap-2 text-gold/80 hover:text-gold transition-colors"
+        aria-label="Venture forth to the about section"
       >
+        <span className="font-display font-semibold text-sm tracking-[0.3em] uppercase">
+          Venture Forth
+        </span>
         <svg
           className="w-6 h-6 animate-bounce"
           fill="none"
