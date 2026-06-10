@@ -3,7 +3,7 @@ export const profile = {
   class: "Data Scientist",
   level: 25,
   title: "Data Scientist / ML Engineer",
-  location: "New York, NY",
+  location: "Santa Clara, CA",
   tagline: "Building production AI systems that actually work when it matters most.",
   bio: `I'm an engineer who believes the most complex data should serve the most critical missions. Currently, I work with NCICS and NOAA, where I build scalable, cloud-native architectures to make sense of our world's climate data. With a Master's in Computer Science from NC State and a deep love for MLOps, I spend my time turning distributed systems into engines for real-world impact. I don't just build models — I build the infrastructure that ensures they actually work when it matters most.`,
   email: "katlanaparth@gmail.com",
@@ -164,12 +164,12 @@ export const sideQuests = [
 ];
 
 export const achievements = [
-  { rank: "1st", title: "NASA Grant — $500k for Novel Forecasting Prototype" },
-  { rank: "Pub", title: "Metric Ensemble for Hallucination Detection — arXiv" },
-  { rank: "Pub", title: "Uncovering Factual Consistency Errors" },
-  { rank: "Pub", title: "General Interface for Factored State Optimization" },
-  { rank: "35+", title: "Online Certifications in ML, DL, Data Science" },
-  { rank: "Lead", title: "Statistical Modeling — 15% Conversion Increase" },
+  { rank: "1st", color: "#FFB800", title: "NASA Grant — $500k for Novel Forecasting Prototype" },
+  { rank: "Pub", color: "#FFA866", title: "Metric Ensemble for Hallucination Detection — arXiv" },
+  { rank: "Pub", color: "#94A3B8", title: "Uncovering Factual Consistency Errors" },
+  { rank: "Pub", color: "#CD7F32", title: "General Interface for Factored State Optimization" },
+  { rank: "35+", color: "#FFA866", title: "Online Certifications in ML, DL, Data Science" },
+  { rank: "Lead", color: "#4A7A2E", title: "Statistical Modeling — 15% Conversion Increase" },
 ];
 
 export const publications = [

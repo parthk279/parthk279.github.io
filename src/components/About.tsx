@@ -2,7 +2,11 @@ import { profile, education } from "@/data/portfolio";
 
 export default function About() {
   return (
-    <section id="about" className="py-24 px-6 max-w-5xl mx-auto">
+    <section id="about" className="cave-bg py-24 px-6 -mt-px">
+      <div className="max-w-5xl mx-auto">
+      <p className="text-xs font-display font-semibold text-primary uppercase tracking-[0.3em] text-center mb-2">
+        About
+      </p>
       <h2 className="font-display text-4xl font-bold text-center text-parchment">
         Character Sheet
       </h2>
@@ -58,6 +62,7 @@ export default function About() {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

@@ -1,9 +1,12 @@
 import { profile } from "@/data/portfolio";
+import CampfireScene from "./CampfireScene";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center relative px-6">
-      <div className="text-center max-w-4xl animate-fade-in-up">
+    <section className="min-h-screen flex flex-col items-center justify-center relative px-6 overflow-hidden">
+      <CampfireScene />
+
+      <div className="text-center max-w-4xl animate-fade-in-up relative z-10">
         <p className="text-gold/80 font-display text-sm md:text-base mb-6 tracking-[0.3em] uppercase">
           ~ a new quest begins ~
         </p>
@@ -35,7 +38,7 @@ export default function Hero() {
 
       <a
         href="#about"
-        className="absolute bottom-10 text-gold/60 hover:text-gold transition-colors"
+        className="absolute bottom-10 z-10 text-gold/60 hover:text-gold transition-colors"
         aria-label="Scroll to about"
       >
         <svg

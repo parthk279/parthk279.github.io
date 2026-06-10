@@ -29,11 +29,15 @@ const treasures = [
 
 export default function Footer() {
   return (
-    <footer id="contact" className="py-24 px-6 max-w-5xl mx-auto">
-      <h2 className="font-display text-4xl font-bold text-center text-parchment">
+    <footer id="contact" className="clearing-bg py-24 px-6 -mt-px">
+      <div className="max-w-5xl mx-auto">
+      <p className="text-xs font-display font-semibold text-[#4A7A2E] uppercase tracking-[0.3em] text-center mb-2">
+        Let&apos;s Connect
+      </p>
+      <h2 className="font-display text-4xl font-bold text-center text-[#1a3a0a]">
         Treasure Found
       </h2>
-      <p className="text-gold/70 text-center text-sm font-display tracking-widest mb-12 mt-2">
+      <p className="text-[#4A7A2E] text-center text-sm font-display tracking-widest mb-12 mt-2">
         ~ take what you need, adventurer ~
       </p>
 
@@ -64,14 +68,15 @@ export default function Footer() {
         ))}
       </div>
 
-      <div className="text-center border-t border-primary/15 pt-8">
-        <p className="text-gold/70 text-sm font-display italic mb-4">
+      <div className="text-center border-t border-[#4A7A2E]/25 pt-8">
+        <p className="text-[#4A7A2E] text-sm font-display italic mb-4">
           &ldquo;the adventure never ends.&rdquo;
         </p>
-        <p className="text-muted/50 text-xs">
+        <p className="text-[#1a3a0a]/50 text-xs">
           &copy; {new Date().getFullYear()} {profile.name.first}{" "}
           {profile.name.last}. All rights reserved.
         </p>
+      </div>
       </div>
     </footer>
   );

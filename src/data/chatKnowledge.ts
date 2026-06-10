@@ -26,7 +26,7 @@ export const knowledge: KnowledgeEntry[] = [
   {
     keywords: ["who", "what", "do", "about parth", "yourself", "summary", "bio", "tldr", "role", "title"],
     response:
-      "Parth Katlana is a **Data Scientist / ML Engineer** with 3+ years building and deploying production AI systems — from agentic LLM workflows and RAG pipelines to distributed deep learning on cloud-native infrastructure. He's currently at **NCICS (a NOAA affiliate)** in New York, turning massive climate datasets into real-world impact.",
+      "Parth Katlana is a **Data Scientist / ML Engineer** with 3+ years building and deploying production AI systems — from agentic LLM workflows and RAG pipelines to distributed deep learning on cloud-native infrastructure. He's currently at **NCICS (a NOAA affiliate)** in Santa Clara, turning massive climate datasets into real-world impact.",
   },
   {
     keywords: ["project", "projects", "built", "build", "portfolio", "work on", "quest"],
@@ -81,7 +81,7 @@ export const knowledge: KnowledgeEntry[] = [
   {
     keywords: ["location", "where", "based", "live", "city", "new york", "nyc", "remote", "relocate"],
     response:
-      "Parth is based in **New York, NY** and works remotely with NCICS/NOAA. 🗽",
+      "Parth is based in **Santa Clara, CA** and works remotely with NCICS/NOAA. ☀️",
   },
   {
     keywords: ["hi", "hello", "hey", "greetings", "yo", "sup", "howdy", "hail"],
