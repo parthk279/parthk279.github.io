@@ -12,11 +12,11 @@ export default function Hero() {
         </p>
 
         <h1 className="font-display text-6xl md:text-8xl font-extrabold tracking-tight leading-[0.95]">
-          <span className="block text-parchment glow-text">{profile.name.first}</span>
-          <span className="block text-primary glow-text">{profile.name.last}</span>
+          <span className="block text-primary glow-text">{profile.name.first}</span>
+          <span className="block text-parchment glow-text">{profile.name.last}</span>
         </h1>
 
-        <p className="text-muted text-lg md:text-xl mt-8 max-w-2xl mx-auto leading-relaxed">
+        <p className="text-muted text-base md:text-xl mt-8 mx-auto leading-relaxed md:whitespace-nowrap">
           {profile.tagline}
         </p>
       </div>
