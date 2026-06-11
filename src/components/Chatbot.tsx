@@ -130,10 +130,37 @@ export default function Chatbot() {
           <span className="absolute top-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-amber-700/60" />
           <span className="absolute bottom-1.5 left-1.5 w-1.5 h-1.5 rounded-full bg-amber-700/60" />
           <span className="absolute bottom-1.5 right-1.5 w-1.5 h-1.5 rounded-full bg-amber-700/60" />
-          {/* campfire icon */}
-          <span className="text-2xl" aria-hidden="true">
-            {open ? "✕" : "🔥"}
-          </span>
+          {/* Quill-leaf icon (matches the template) */}
+          {open ? (
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              className="w-6 h-6 relative z-10"
+              stroke="#FFB800"
+              strokeWidth="1.5"
+              strokeLinecap="round"
+            >
+              <line x1="6" y1="6" x2="18" y2="18" />
+              <line x1="18" y1="6" x2="6" y2="18" />
+            </svg>
+          ) : (
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              className="w-6 h-6 relative z-10 drop-shadow-[0_0_8px_rgba(255,184,0,0.6)] group-hover:drop-shadow-[0_0_12px_rgba(255,184,0,0.8)] transition-all"
+            >
+              <path
+                d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"
+                fill="rgba(255,184,0,0.15)"
+                stroke="#FFB800"
+                strokeWidth="1.5"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+              />
+              <line x1="16" y1="8" x2="2" y2="22" stroke="#FFB800" strokeWidth="1.5" strokeLinecap="round" />
+              <line x1="17.5" y1="15" x2="9" y2="15" stroke="#FFB800" strokeWidth="1.5" strokeLinecap="round" />
+            </svg>
+          )}
         </div>
         {!open && (
           <span
@@ -159,8 +186,19 @@ export default function Chatbot() {
         <div className="rounded-2xl overflow-hidden wood-card shadow-[0_8px_40px_rgba(0,0,0,0.6)]">
           {/* Header */}
           <div className="flex items-center gap-3 px-4 py-3 border-b border-primary/20 bg-gradient-to-r from-[#3a2a1a] to-[#2a1c10]">
-            <span className="w-9 h-9 rounded-xl flex items-center justify-center bg-primary/20 border border-gold/40 text-lg">
-              🔥
+            <span className="w-9 h-9 rounded-xl flex items-center justify-center bg-primary/20 border border-gold/40">
+              <svg viewBox="0 0 24 24" fill="none" className="w-5 h-5">
+                <path
+                  d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"
+                  fill="rgba(255,184,0,0.15)"
+                  stroke="#FFB800"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <line x1="16" y1="8" x2="2" y2="22" stroke="#FFB800" strokeWidth="1.5" strokeLinecap="round" />
+                <line x1="17.5" y1="15" x2="9" y2="15" stroke="#FFB800" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
             </span>
             <div>
               <p className="font-display font-bold text-parchment text-sm leading-tight">
