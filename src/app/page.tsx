@@ -1,4 +1,3 @@
-import Nav from "@/components/Nav";
 import Ambient from "@/components/Ambient";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -15,7 +14,6 @@ export default function Home() {
   return (
     <>
       <Ambient />
-      <Nav />
       <main>
         <Hero />
         <About />

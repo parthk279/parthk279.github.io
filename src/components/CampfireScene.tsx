@@ -1,17 +1,7 @@
 // Decorative campfire scene anchored at the bottom of the hero.
-// Layered forest silhouette + a flickering central campfire, hanging vines,
-// and creature eyes lurking in the dark that glow amber on hover.
+// Layered forest silhouette + a flickering central campfire.
 // Faithful port of the reference template's SVG scene.
-
-// Eye-pairs (two pupils ~10px apart) hidden in the treeline.
-const eyePairs: [number, number][] = [
-  [300, 234],
-  [450, 184],
-  [600, 196],
-  [840, 200],
-  [980, 176],
-  [1120, 215],
-];
+// (The glowing creature eye-pairs are rendered separately in FireEyes.)
 
 export default function CampfireScene() {
   return (
@@ -21,7 +11,7 @@ export default function CampfireScene() {
     >
       <svg
         viewBox="0 0 1440 500"
-        className="absolute bottom-0 w-full h-full pointer-events-auto"
+        className="absolute bottom-0 w-full h-full"
         preserveAspectRatio="xMidYMax slice"
       >
         {/* Far treeline */}
@@ -39,22 +29,6 @@ export default function CampfireScene() {
           d="M0,400 L0,300 C50,280 100,250 160,265 C220,280 260,240 330,235 C400,230 440,260 510,248 C580,236 620,210 700,220 C780,230 820,200 900,195 C980,190 1020,220 1100,210 C1180,200 1220,180 1300,195 C1380,210 1420,195 1440,200 L1440,500 L0,500Z"
           fill="#0E1A0E"
         />
-
-        {/* Creature eyes lurking in the dark */}
-        {eyePairs.map(([x, y], i) => (
-          <g className="eye-group" key={i}>
-            {/* invisible hit area so the whole spot is hoverable */}
-            <rect
-              x={x - 18}
-              y={y - 14}
-              width="42"
-              height="28"
-              fill="transparent"
-            />
-            <circle className="eye" cx={x} cy={y} r="2.5" />
-            <circle className="eye" cx={x + 11} cy={y - 2} r="2.5" />
-          </g>
-        ))}
 
         {/* Foreground hills */}
         <path
