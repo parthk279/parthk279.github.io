@@ -4,6 +4,21 @@ import CampfireScene from "./CampfireScene";
 export default function Hero() {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center relative px-6 overflow-hidden">
+      {/* Moon, glowing in the top-right of the night sky */}
+      <div
+        className="absolute z-[2] rounded-full pointer-events-none"
+        style={{
+          top: "8%",
+          right: "12%",
+          width: "50px",
+          height: "50px",
+          background: "#FFF8E8",
+          boxShadow:
+            "0 0 40px 10px rgba(255,248,232,0.2), 0 0 80px 30px rgba(255,248,232,0.08)",
+        }}
+        aria-hidden="true"
+      />
+
       <CampfireScene />
 
       <div className="text-center max-w-4xl animate-fade-in-up relative z-10">
