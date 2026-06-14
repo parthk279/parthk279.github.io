@@ -2,6 +2,7 @@ import { profile } from "@/data/portfolio";
 import CampfireScene from "./CampfireScene";
 import FireEyes from "./FireEyes";
 import Fireflies from "./Fireflies";
+import ShootingStars from "./ShootingStars";
 
 export default function Hero() {
   return (
@@ -24,13 +25,14 @@ export default function Hero() {
       <CampfireScene />
       <FireEyes />
       <Fireflies />
+      <ShootingStars />
 
       <div className="text-center max-w-4xl animate-fade-in-up relative z-10 -mt-24 md:-mt-32">
-        <p className="text-gold/40 font-display text-sm md:text-base mb-6 tracking-[0.3em] uppercase">
+        <p className="text-gold/40 font-display text-xs md:text-sm mb-6 tracking-[0.3em] uppercase">
           ~ a new quest begins ~
         </p>
 
-        <h1 className="font-display text-7xl md:text-8xl lg:text-9xl font-extrabold tracking-tight leading-[0.9]">
+        <h1 className="font-display text-8xl md:text-9xl lg:text-[10rem] font-extrabold tracking-tight leading-[0.88]">
           <span className="block text-primary glow-text">{profile.name.first}</span>
           <span className="block text-parchment glow-text">{profile.name.last}</span>
         </h1>
