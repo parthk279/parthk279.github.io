@@ -1,8 +1,6 @@
 import Ambient from "@/components/Ambient";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
-import Skills from "@/components/Skills";
-import Connect from "@/components/Connect";
 import Achievements from "@/components/Achievements";
 import Experience from "@/components/Experience";
 import Projects from "@/components/Projects";
@@ -17,8 +15,6 @@ export default function Home() {
       <main>
         <Hero />
         <About />
-        <Skills />
-        <Connect />
         <Achievements />
         <Experience />
         <Projects />

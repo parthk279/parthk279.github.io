@@ -14,7 +14,15 @@ export const profile = {
     medium: "https://medium.com",
   },
   resumeUrl: "/resume.pdf",
+  // Shown as a playful interests line at the bottom of the character sheet.
+  interests: ["Loves building side projects", "Loves travelling", "Loves coffee"],
 };
+
+// A curated, flat list of headline skills for the character-sheet pills.
+export const featuredSkills = [
+  "Python", "SQL", "PyTorch", "LangChain", "RAG", "Agentic AI",
+  "LLMs", "AWS", "SageMaker", "Spark", "MLflow", "Docker",
+];
 
 export const skills = {
   "Languages & Databases": [
