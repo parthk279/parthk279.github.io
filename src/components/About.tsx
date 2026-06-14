@@ -2,6 +2,7 @@ import { profile, education, featuredSkills } from "@/data/portfolio";
 import RevealImage from "./RevealImage";
 import Vines from "./Vines";
 import Torch from "./Torch";
+import Achievements from "./Achievements";
 
 const socials = [
   {
@@ -162,6 +163,9 @@ export default function About() {
             </div>
           </div>
         </div>
+
+        {/* Achievements Unlocked — bottom of the cave section */}
+        <Achievements />
       </div>
     </section>
   );

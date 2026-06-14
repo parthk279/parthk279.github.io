@@ -48,7 +48,8 @@ export const skills = {
 
 export const experience = [
   {
-    level: 5,
+    level: 25,
+    short: "NCICS",
     role: "Data Scientist",
     company: "NCICS - NOAA Affiliate",
     location: "Remote",
@@ -65,7 +66,8 @@ export const experience = [
     tech: ["LangChain", "RAG", "AWS", "FSDP", "CUDA", "Databricks", "SageMaker", "MLflow"],
   },
   {
-    level: 4,
+    level: 22,
+    short: "LAS",
     role: "Data Scientist",
     company: "Laboratory of Analytical Sciences",
     location: "Raleigh, NC",
@@ -81,7 +83,8 @@ export const experience = [
     tech: ["LLMs", "GPT-4", "CLIP", "YOLOv8", "XGBoost", "Python", "SQL", "Spark"],
   },
   {
-    level: 3,
+    level: 19,
+    short: "Kion",
     role: "Data Scientist",
     company: "Kion Technologies",
     location: "India",
@@ -172,12 +175,12 @@ export const sideQuests = [
 ];
 
 export const achievements = [
-  { rank: "1st", color: "#FFB800", title: "NASA Grant — $500k for Novel Forecasting Prototype" },
-  { rank: "Pub", color: "#FFA866", title: "Metric Ensemble for Hallucination Detection — arXiv" },
-  { rank: "Pub", color: "#94A3B8", title: "Uncovering Factual Consistency Errors" },
-  { rank: "Pub", color: "#CD7F32", title: "General Interface for Factored State Optimization" },
-  { rank: "35+", color: "#FFA866", title: "Online Certifications in ML, DL, Data Science" },
-  { rank: "Lead", color: "#4A7A2E", title: "Statistical Modeling — 15% Conversion Increase" },
+  { rank: "$500k", color: "#FFB800", title: "NASA Grant" },
+  { rank: "0.91", color: "#FFA866", title: "Hallucination Detector" },
+  { rank: "3", color: "#94A3B8", title: "Papers Published" },
+  { rank: "40%", color: "#CD7F32", title: "GPU Cost Cut" },
+  { rank: "35+", color: "#4A7A2E", title: "Certifications" },
+  { rank: "10M+", color: "#FFB800", title: "Users Scaled (A/B)" },
 ];
 
 export const publications = [
